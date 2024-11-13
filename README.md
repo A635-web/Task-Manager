@@ -1,5 +1,4 @@
 
-Here's a basic template for your README.md file. This includes an overview of the project, setup instructions, and additional information you might find useful:
 
 Task Manager Application
 This Task Manager Application is a simple, responsive web app for managing tasks with features like adding, editing, deleting, and filtering tasks by priority level (High, Medium, Low) and completion status. This project was built with React and styled using Tailwind CSS and Material UI.
