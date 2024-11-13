@@ -167,7 +167,7 @@
 import React, { useState } from "react";
 import { HiMiniCalendarDays, HiOutlineTrash } from "react-icons/hi2";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
-
+import { HiPencil } from "react-icons/hi";
 const Task = ({ ele, handleDelete, handleCompleted, handleEdit }) => {
   const [isEditing, setIsEditing] = useState(false); // State to toggle edit mode
   const [editedTask, setEditedTask] = useState({ ...ele }); // State to hold edited task data
@@ -237,7 +237,7 @@ const Task = ({ ele, handleDelete, handleCompleted, handleEdit }) => {
           <p style={{ color: "var(--text-s)" }} className="text-sm pt-2">
             {ele.description}
           </p>
-          <div className={`priority-${ele.priority.toLowerCase()} mt-3`}>
+          <div className="{`priority-${ele.priority.toLowerCase()} mt-3`} text-white" >
             Priority: {ele.priority}
           </div>
           <h1 style={{ color: "var(--text-s)" }} className="text-md font-medium pt-16 flex items-center gap-2">
@@ -255,15 +255,22 @@ const Task = ({ ele, handleDelete, handleCompleted, handleEdit }) => {
                 {ele.completed ? "completed" : "uncompleted"}
               </button>
               <div className="flex gap-2">
-                <button
+                {/* <button
                   className="pt-2 text-xl"
                   onClick={handleEditClick} // Show edit form
                 >
                   Edit
-                </button>
+                </button> */}
+
+<button
+  className=" rounded text-black w-[90%] pt-3 flex items-center justify-center"
+  onClick={handleEditClick} // Show edit form
+>
+  <HiPencil className="text-white text-2xl" /> {/* Larger pencil icon */}
+</button>
                 <button
-                  style={{ color: "var(--text-s)" }}
-                  className="text-xl pt-2"
+                  
+                  className="text-xl pt-2 text-white"
                   onClick={() => handleDelete(ele.id)}
                 >
                   <HiOutlineTrash />
