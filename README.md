@@ -14,6 +14,8 @@ Dark Theme: The app has a dark theme applied by default for a sleek, modern UI.
 Live Link: 
 
 Installation
+
+
 To set up the project locally, follow these steps:
 
 Clone the Repository:
@@ -32,5 +34,23 @@ Technologies Used
 React: For creating a reactive UI.
 Tailwind CSS: For custom styling.
 Material UI: For enhanced UI components and icons
+ 
+        ##################### Demo Videos ######################
+here you can see the demo video:
+1.Add a task 
+
+https://github.com/user-attachments/assets/815be9a8-793e-414e-96dc-bc52a9bf92c3
+
+2. Filter Functionality
+
+https://github.com/user-attachments/assets/35e2d983-096d-4e3c-90b3-9743db0b363f
+
+3. see/mark completed and uncompleted tasks
+
+https://github.com/user-attachments/assets/a916fee6-81a0-4485-a50e-b0d8509bffa8
+
+4.user can set the priority levels as well as can edit priority
+
+https://github.com/user-attachments/assets/e041191a-5f87-441e-bf26-862b4522826f
 
 
